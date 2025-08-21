@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Thank You!</title>
+  <title>Thank You - HeyLooks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cream': '#efeee7',
+            'cream-dark': '#e6e5de',
+            'accent': '#2d3748',
+            'accent-light': '#4a5568'
+          }
+        }
+      }
+    }
+  </script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f9f9f9;
+      font-family: 'Inter', sans-serif;
     }
-    .box {
-      background: #fff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      display: inline-block;
-    }
-    h1 { color: #2E86C1; }
-    p { color: #333; }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #2E86C1;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    a:hover { background: #1A5276; }
   </style>
 </head>
-<body>
-  <div class="box">
-    <h1>Thank You!</h1>
-    <p>Your information has been successfully submitted. Our team will contact you shortly.</p>
-    <a href="https://yourdomain.com">Back to Home</a>
+
+<body class="bg-cream min-h-screen">
+  <div class="container mx-auto px-4 py-8 min-h-screen flex items-center justify-center">
+    <div class="form-wrapper bg-white rounded-2xl shadow-lg max-w-md w-full p-8 mx-4">
+      <!-- Success Icon -->
+      <div class="text-center mb-8">
+        <div class="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+        </div>
+
+        <div class="form-header">
+          <h1 class="text-3xl font-bold text-accent mb-3">Thank You!</h1>
+          <p class="text-gray-600 leading-relaxed">
+            Your information has been successfully submitted.<br>
+            Our team will get back to you shortly.
+          </p>
+        </div>
+      </div>
+
+      <!-- Form Actions -->
+      <div class="form-actions space-y-3">
+        <a href="../newLeadForm.html"
+          class="block w-full bg-accent hover:bg-accent-light text-white font-medium py-3 px-6 rounded-lg text-center transition duration-200 ease-in-out transform hover:scale-105">
+          Submit Another Form
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <div class="text-center mt-8 pt-6 border-t border-gray-100">
+        <p class="text-xs text-gray-500">
+          Need immediate assistance? Contact us at
+          <a href="mailto:ntmygaa@gmail.com" class="text-accent hover:underline">info@heylooks.com</a>
+        </p>
+      </div>
+    </div>
   </div>
+
+  <script>
+    // Generate random reference ID
+    function generateReferenceId() {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+      let result = 'HL-';
+      for (let i = 0; i < 8; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return result;
+    }
+
+    // Set reference ID on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('referenceId').textContent = generateReferenceId();
+    });
+  </script>
 </body>
+
 </html>
