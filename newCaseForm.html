@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <title>HeyLooks Support Case Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="case-form-style">
+<body>
     <div class="container">
         <div class="form-wrapper">
             <div class="form-header">
@@ -30,16 +33,13 @@
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="email">Email Address <span class="required">*</span></label>
+                            <label for="phone">Phone</label>
+                            <input id="phone" maxlength="40" name="phone" type="tel" placeholder="+62 xxx-xxxx-xxxx" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email<span class="required">*</span></label>
                             <input id="email" maxlength="80" name="email" type="email"
                                 placeholder="your.email@example.com" required />
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input id="phone" maxlength="40" name="phone" type="tel" placeholder="+62 xxx-xxxx-xxxx" />
                         </div>
                     </div>
                 </div>
