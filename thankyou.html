@@ -50,13 +50,13 @@
         </div>
       </div>
 
-      <!-- Form Actions -->
+      <!-- Form Actions
       <div class="form-actions space-y-3">
         <a href="#" id="submitAnotherBtn"
           class="block w-full bg-accent hover:bg-accent-light text-white font-medium py-3 px-6 rounded-lg text-center transition duration-200 ease-in-out transform hover:scale-105">
           Submit Another Form
         </a>
-      </div>
+      </div> -->
 
       <!-- Footer -->
       <div class="text-center mt-8 pt-6 border-t border-gray-100">
@@ -67,39 +67,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    // Generate random reference ID
-    function generateReferenceId() {
-      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-      let result = 'HL-';
-      for (let i = 0; i < 8; i++) {
-        result += chars.charAt(Math.floor(Math.random() * chars.length));
-      }
-      return result;
-    }
-
-    // Initialize page when DOM is loaded
-    document.addEventListener('DOMContentLoaded', function () {
-      // Set reference ID if element exists
-      const referenceIdElement = document.getElementById('referenceId');
-      if (referenceIdElement) {
-        referenceIdElement.textContent = generateReferenceId();
-      }
-
-      // Check referrer and set appropriate link for submit button
-      const submitBtn = document.getElementById('submitAnotherBtn');
-      if (submitBtn) {
-        const referrer = document.referrer;
-
-        if (referrer.includes('newLeadForm')) {
-          submitBtn.href = 'newLeadForm.html';
-        } else if (referrer.includes('newCaseForm')) {
-          submitBtn.href = 'newCaseForm.html';
-        }
-      }
-    });
-  </script>
 </body>
 
 </html>
