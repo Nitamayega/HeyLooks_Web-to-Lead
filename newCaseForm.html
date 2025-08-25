@@ -23,8 +23,8 @@
             <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgL000006a5Yp"
                 method="POST">
 
-                <input type="hidden" name="orgid" value="00DgL000006a5Yp">
-                <input type="hidden" name="retURL"
+                <input type=hidden name="orgid" value="00DgL000006a5Yp">
+                <input type=hidden name="retURL"
                     value="https://nitamayega.github.io/HeyLooks_Web-to-Lead/thankyou.html">
 
                 <!-- Contact Information Section -->
@@ -53,12 +53,10 @@
                             <label for="type">Case Type</label>
                             <select id="type" name="type">
                                 <option value="">Select case type</option>
-                                <option value="Technical Support">Technical Support</option>
-                                <option value="Product Inquiry">Product Inquiry</option>
-                                <option value="Order Issue">Order Issue</option>
-                                <option value="Billing Question">Billing Question</option>
-                                <option value="Feature Request">Feature Request</option>
-                                <option value="Bug Report">Bug Report</option>
+                                <option value="Technical Issue">Technical Issue</option>
+                                <option value="Billing">Billing</option>
+                                <option value="Inquiry">Inquiry</option>
+                                <option value="Complaint">Complaint</option>
                                 <option value="Other">Other</option>
                             </select>
                         </div>
@@ -69,6 +67,26 @@
                                 <option value="High">High - Critical Issue</option>
                                 <option value="Medium">Medium - Important</option>
                                 <option value="Low">Low - General Inquiry</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="reason">Case Reason</label><select id="reason" name="reason">
+                                <option value="">Select case reason</option>
+                                <option value="Bug">Bug</option>
+                                <option value="Configuration">Configuration</option>
+                                <option value="Performance">Performance</option>
+                                <option value="Overcharge">Overcharge</option>
+                                <option value="Refund">Refund</option>
+                                <option value="Payment Failed">Payment Failed</option>
+                                <option value="Product Info">Product Info</option>
+                                <option value="Pricing">Pricing</option>
+                                <option value="Trial Request">Trial Request</option>
+                                <option value="Service">Service</option>
+                                <option value="Support">Support</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                     </div>
@@ -88,9 +106,9 @@
 
                     <div class="form-row">
                         <div class="form-group full-width">
-                            <label for="Product">Related Product</label>
-                            <select id="00NgK000014tqOI" name="00NgK000014tqOI">
-                                <option value="">Select product</option>
+                            <label for="Product">Related Product <span class="required">*</span></label>
+                            <select id="00NgL000012hdvq" name="00NgL000012hdvq" title="Product" required>
+                                <option value="">Select a product</option>
                                 <option value="Celana Chino Unisex">Celana Chino Unisex</option>
                                 <option value="Kemeja Linen Premium">Kemeja Linen Premium</option>
                                 <option value="Blouse Katun Polos">Blouse Katun Polos</option>

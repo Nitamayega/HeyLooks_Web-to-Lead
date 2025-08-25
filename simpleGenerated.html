@@ -1,0 +1,80 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgL000006a5Yp"
+    method="POST">
+
+    <input type=hidden name="orgid" value="00DgL000006a5Yp">
+    <input type=hidden name="retURL" value="https://nitamayega.github.io/HeyLooks_Web-to-Lead/thankyou.html">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail" value="nitamygaa@gmail.com">     -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+    <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+    <label for="type">Type</label><select id="type" name="type">
+        <option value="">--None--</option>
+        <option value="Technical Issue">Technical Issue</option>
+        <option value="Billing">Billing</option>
+        <option value="Inquiry">Inquiry</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Other">Other</option>
+    </select><br>
+
+    <label for="priority">Priority</label><select id="priority" name="priority">
+        <option value="">--None--</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select><br>
+
+    <label for="subject">Subject</label><input id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+    Product:<select id="00NgL000012hdvq" name="00NgL000012hdvq" title="Product">
+        <option value="">--None--</option>
+        <option value="Celana Chino Unisex">Celana Chino Unisex</option>
+        <option value="Kemeja Linen Premium">Kemeja Linen Premium</option>
+        <option value="Blouse Katun Polos">Blouse Katun Polos</option>
+        <option value="Jaket Denim Oversized">Jaket Denim Oversized</option>
+        <option value="Cardigan Rajut Premium">Cardigan Rajut Premium</option>
+        <option value="Smart Casual Set">Smart Casual Set</option>
+        <option value="Office Chic Bundle">Office Chic Bundle</option>
+        <option value="Rok Midi Pleated">Rok Midi Pleated</option>
+    </select><br>
+
+    <label for="description">Description</label><textarea name="description"></textarea><br>
+
+    <label for="reason">Case Reason</label><select id="reason" name="reason">
+        <option value="">--None--</option>
+        <option value="Bug">Bug</option>
+        <option value="Configuration">Configuration</option>
+        <option value="Performance">Performance</option>
+        <option value="Overcharge">Overcharge</option>
+        <option value="Refund">Refund</option>
+        <option value="Payment Failed">Payment Failed</option>
+        <option value="Product Info">Product Info</option>
+        <option value="Pricing">Pricing</option>
+        <option value="Trial Request">Trial Request</option>
+        <option value="Service">Service</option>
+        <option value="Support">Support</option>
+        <option value="Other">Other</option>
+    </select><br>
+
+    <input type="submit" name="submit">
+
+</form>
